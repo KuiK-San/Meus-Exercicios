@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Número (Entre 1 e 100) <input type="number" name="txtadn" id="txtadn">
+                <input type="button" value="Adcionar" onclick="adicionar()">
+            </p>
+        </div>
+        <div>
+            <p>
+                <select name="namsel" id="idsel" size="10px">                    
+                </select>
+                <input type="button" value="Analisar" onclick="analisar()">
+                
+            </p>
+            <p id = 'res'>
+
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Guilherme Casagrande & Cursoemvideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

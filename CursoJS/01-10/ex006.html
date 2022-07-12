@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        div#area {
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id = "area" onclick="clicar()" onmouseenter="mouse_dentro()" onmouseout="mouse_fora()">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener('click', clicar())
+        a.addEventListener('mouseenter', mouse_dentro())
+        a.addEventListener('mouseout', mouse_fora())
+
+            function clicar() {
+            a.innerText = 'Clicou!'
+            }
+            function mouse_dentro(){
+                a.innerText = "Entrou!"
+            }
+            function mouse_fora(){
+                a.innerText = 'Saiu!'
+            }
+            
+    </script>
+</body>
+</html>
